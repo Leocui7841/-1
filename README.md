@@ -7,4 +7,5 @@ Regression(回归)，是让我们找到一个函数，使得给定一个input，
 y = b + w1 \* xcp，  
 y = b + w1 \* xcp + w2 \* (xcp)²,  
 ……  
-接着我们将training data放入我们建立的model中去
+我们通过training data构建了这个model，接着我们将testing data放入我们建立的model中去计算我们预测的cp值与实际的cp值之间的偏差，以此用来代表我们的model的好坏程度。  
+我们发现，在一定程度上我们的model表达式越复杂，它的预测效果就越好，但是当表达式过于复杂的时候，我们的预测效果反而会变得很糟糕，这种现象我们称之为**Overfitting**，所以我们的model并不是越复杂就越好的，构建一个合适的model就成了一个非常关键的问题。
